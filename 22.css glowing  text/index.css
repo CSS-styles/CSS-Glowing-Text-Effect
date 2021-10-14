@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #262626FF;
+}
+span{
+	color: coral;
+	font-size: 70px;
+	font-weight: bold;
+	font-family: monospace;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+span:hover{
+	animation: word 1s linear infinite;	
+	text-shadow: 1px 1px 60px coral;
+}
+@keyframes word{
+	0%{
+		filter: hue-rotate(0deg);
+	}
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
+
